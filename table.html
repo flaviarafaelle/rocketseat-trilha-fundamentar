@@ -1,0 +1,90 @@
+<!-- 
+    <table> ajuda na organização de dados criando tabelas.
+
+    Prós
+    - Visualização de dados via linhas e colunas.
+    - Boa acessibilidade para leitura dos dados Contras
+    
+    Contras
+    - Pouco flexível
+    - Precisa de estilização para melhor visualização Não usar
+    
+    Não usar
+    - Para criar seu layout
+-->
+
+<!-- tabela básica-->
+<table>
+  <caption>
+    Pessoas por idade
+  </caption>
+
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flavis</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Artu</td>
+      <td>Velho</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total:</td>
+      <td>2 Pessoas</td>
+    </tr>
+  </tfoot>
+</table>
+
+<br>
+
+<!-- tabela complexa -->
+<table>
+    <caption>Produzidos x vendindoos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: purple;"> <!--span = colunas-->
+        <col span="2" style="background-color: pink;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th> <!-- rowspan = linha-->
+            <th colspan="2" scope="colgroup">Rose</th> <!--colspan = coluna / scope = acessibilidade-->
+            <th colspan="2" scope="colgroup">Mori</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Perfume</th> <!--scope de linha-->
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Velas</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>

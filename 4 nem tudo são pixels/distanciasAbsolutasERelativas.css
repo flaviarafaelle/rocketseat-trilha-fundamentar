@@ -1,4 +1,4 @@
-# Distâncias absolutas <length>
+/* Distâncias absolutas <length>
 São fixas e não alteram seu valor.
 
 | Unidade  | Nome                | Equivalência         |
@@ -10,7 +10,7 @@ São fixas e não alteram seu valor.
 
 *não é recomendado usar cm
 
-# Distâncias relativas
+Distâncias relativas
 
 São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
 
@@ -24,6 +24,7 @@ Benefício: Maior adaptação aos diferentes tipos de tela.
 | vh       | 1% da viewport height                         |
 
 Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor temos que fazer a alteração no root ou no elemento html.
+*/
 
 :root {
 	font-size: 18px;
@@ -35,4 +36,4 @@ html {
 	font-size: 18px;
 }
 
-O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.
+/* O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.
